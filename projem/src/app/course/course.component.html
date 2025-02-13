@@ -1,0 +1,14 @@
+<div class="card-container">
+    <div class="card" *ngFor="let course of courses">
+        
+            <div class="card-content">
+                <img [src]="course.image" alt="" class="card-image">
+                <h2>{{course.name}}</h2>
+                <p>SÜRESİ {{course.duration}} GÜN</p><br>
+                <p>{{course.price}} TL</p>
+                <button (click)="addCourse(courses)">SATIN AL</button>
+            </div>
+        
+     
+
+    </div>
